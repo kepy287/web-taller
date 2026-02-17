@@ -1,17 +1,33 @@
-export default function DashboardLayout({
+import { redirect } from "next/navigation"
+import { createServerClient } from "@supabase/ssr"
+import { cookies } from "next/headers"
+
+export default async function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return (
-    <div className="flex min-h-screen">
-      <aside className="w-64 bg-gray-900 text-white p-4">
-        Sidebar
-      </aside>
+  const cookieStore = await cookies() // 👈 AHORA ES ASYNC
 
-      <main className="flex-1 p-6 bg-gray-100">
-        {children}
-      </main>
-    </div>
-  );
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        get(name: string) {
+          return cookieStore.get(name)?.value
+        },
+      },
+    }
+  )
+
+  const {
+    data: { session },
+  } = await supabase.auth.getSession()
+
+  if (!session) {
+    redirect("/login")
+  }
+
+  return <>{children}</>
 }
