@@ -113,10 +113,10 @@ function LoginPage() {
             console.log("Login exitoso");
             // Si el login es exitoso redirigimos al dashboard
             // 🔥 Importante para SSR
-            router.replace("/dashboard");
-            router.refresh();
-        // esta linea estamos quitando
-        // router.push('/dashboard')
+            // router.replace("/dashboard")
+            // router.refresh()
+            // esta linea estamos quitando
+            router.push('/dashboard');
         } catch (error) {
             console.log("Error login:", error);
             alert(error.message);

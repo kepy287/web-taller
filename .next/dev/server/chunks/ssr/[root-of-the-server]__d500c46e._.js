@@ -12,11 +12,15 @@ __turbopack_context__.s([
     "supabase",
     ()=>supabase
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/web-taller/node_modules/@supabase/supabase-js/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+// se comento y se agrego el codigo de abajo 
+// import { createClient } from '@supabase/supabase-js'
+// const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+// const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+// export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+var __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f40$supabase$2f$ssr$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/web-taller/node_modules/@supabase/ssr/dist/module/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f40$supabase$2f$ssr$2f$dist$2f$module$2f$createBrowserClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/web-taller/node_modules/@supabase/ssr/dist/module/createBrowserClient.js [app-ssr] (ecmascript)");
 ;
-const supabaseUrl = ("TURBOPACK compile-time value", "https://gvaunpnjzfetajbbjszj.supabase.co");
-const supabaseAnonKey = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd2YXVucG5qemZldGFqYmJqc3pqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNDQwMzcsImV4cCI6MjA4NjcyMDAzN30.8FPIG4ELnrUCWLEoUh27bvZocKwEmopJ3DYhvNW8Uvw");
-const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createClient"])(supabaseUrl, supabaseAnonKey);
+const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f40$supabase$2f$ssr$2f$dist$2f$module$2f$createBrowserClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createBrowserClient"])(("TURBOPACK compile-time value", "https://gvaunpnjzfetajbbjszj.supabase.co"), ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd2YXVucG5qemZldGFqYmJqc3pqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNDQwMzcsImV4cCI6MjA4NjcyMDAzN30.8FPIG4ELnrUCWLEoUh27bvZocKwEmopJ3DYhvNW8Uvw"));
 }),
 "[project]/web-taller/src/services/authService.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

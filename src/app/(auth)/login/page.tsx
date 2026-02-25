@@ -17,11 +17,11 @@
         console.log("Login exitoso")
         // Si el login es exitoso redirigimos al dashboard
         // 🔥 Importante para SSR
-        router.replace("/dashboard")
-        router.refresh()
+        // router.replace("/dashboard")
+        // router.refresh()
         
         // esta linea estamos quitando
-        // router.push('/dashboard')
+        router.push('/dashboard')
 
       } catch (error: any) {
         console.log("Error login:", error)
