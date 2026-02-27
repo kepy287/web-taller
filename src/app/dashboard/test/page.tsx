@@ -24,15 +24,16 @@ export default async function TestPage() {
     return <div>No user</div>
   }
 
-  const { data, error } = await supabase
-    .from("profiles")
-    .update({ rol: "admin" })
-    .eq("id", user.id)
+  // se comento porque se modificaba el rol, cuando cambio el nombre del usuario en la pagina perfil
+  // const { data, error } = await supabase
+  //   .from("profiles")
+  //   .update({ rol: "admin" })
+  //   .eq("id", user.id)
 
-  return (
-    <div>
-      <h1>Resultado</h1>
-      <pre>{JSON.stringify({ data, error }, null, 2)}</pre>
-    </div>
-  )
+  // return (
+  //   <div>
+  //     <h1>Resultado</h1>
+  //     <pre>{JSON.stringify({ data, error }, null, 2)}</pre>
+  //   </div>
+  // )
 }
