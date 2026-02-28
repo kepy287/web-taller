@@ -1,0 +1,35 @@
+{
+  "node": {
+    "40f25a1aa8ad74f97849d3d5bb4e585711aec40e0d": {
+      "workers": {
+        "app/dashboard/admin/usuarios/page": {
+          "moduleId": "[project]/web-taller/.next-internal/server/app/dashboard/admin/usuarios/page/actions.js { ACTIONS_MODULE0 => \"[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/web-taller/src/lib/actions/changeUserRole.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "web-taller/src/app/dashboard/admin/usuarios/page.tsx"
+        }
+      },
+      "layer": {
+        "app/dashboard/admin/usuarios/page": "rsc"
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "web-taller/src/app/dashboard/admin/usuarios/page.tsx"
+    },
+    "60436a1e7c8eb2fe460148635d2f0dea2e650e64ae": {
+      "workers": {
+        "app/dashboard/admin/usuarios/page": {
+          "moduleId": "[project]/web-taller/.next-internal/server/app/dashboard/admin/usuarios/page/actions.js { ACTIONS_MODULE0 => \"[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/web-taller/src/lib/actions/changeUserRole.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "changeUserRole",
+          "filename": "web-taller/src/lib/actions/changeUserRole.ts"
+        }
+      },
+      "layer": {
+        "app/dashboard/admin/usuarios/page": "rsc"
+      },
+      "exportedName": "changeUserRole",
+      "filename": "web-taller/src/lib/actions/changeUserRole.ts"
+    }
+  },
+  "edge": {}
+}
