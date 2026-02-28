@@ -1,21 +1,5 @@
 {
-  "node": {
-    "408261a0471a39a0f1665ec75f19d01fc97940cbdf": {
-      "workers": {
-        "app/dashboard/perfil/page": {
-          "moduleId": "[project]/web-taller/.next-internal/server/app/dashboard/perfil/page/actions.js { ACTIONS_MODULE0 => \"[project]/web-taller/src/lib/actions/updateProfile.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateProfile",
-          "filename": "web-taller/src/lib/actions/updateProfile.ts"
-        }
-      },
-      "layer": {
-        "app/dashboard/perfil/page": "action-browser"
-      },
-      "filename": "web-taller/src/lib/actions/updateProfile.ts",
-      "exportedName": "updateProfile"
-    }
-  },
+  "node": {},
   "edge": {},
   "encryptionKey": "Avs+7agPJFCCzWie7X4XolmTuJg4qCN00Sfvu99BwXw="
 }
