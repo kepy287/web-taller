@@ -3,3 +3,14 @@
 [00:00:27.960] Browser LOG     Intentando login...
 [00:00:45.682] Browser LOG     Intentando login...
 [00:00:47.509] Browser LOG     Intentando login...
+[00:09:52.605] Browser ERROR   {}
+[00:09:52.605] Browser LOG     Error login: {"__isAuthError":true,"name":"AuthRetryableFetchError","status":0}
+[00:09:52.605] Browser ERROR   {}
+[00:09:52.605] Browser LOG     Error login: {"__isAuthError":true,"name":"AuthRetryableFetchError","status":0}
+[00:09:52.606] Browser ERROR   {}
+[00:09:52.606] Browser LOG     Error login: {"__isAuthError":true,"name":"AuthRetryableFetchError","status":0}
+[01:58:52.615] Browser ERROR   {}
+[01:58:52.615] Browser ERROR   {"__isAuthError":true,"name":"AuthRetryableFetchError","status":0}
+[10:52:53.925] Browser LOG     Intentando login...
+[10:52:54.767] Server  WARN    Using the user object as returned from supabase.auth.getSession() or from some supabase.auth.onAuthStateChange() events could be insecure! This value comes directly from the storage medium (usually cookies on the server) and may not be authentic. Use supabase.auth.getUser() instead which authenticates the data by contacting the Supabase Auth server.
+[10:52:54.779] Browser LOG     Login exitoso
