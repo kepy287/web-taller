@@ -103,7 +103,23 @@ async function UsuariosAdminPage() {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["redirect"])("/dashboard");
     }
     // 📋 Obtener todos los usuarios
-    const { data: users } = await supabase.rpc("get_all_profiles");
+    // se tipo el userprofile
+    const { data: users, error } = await supabase.rpc("get_all_profiles");
+    if (error) {
+        console.error(error);
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: "Error cargando usuarios"
+        }, void 0, false, {
+            fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
+            lineNumber: 54,
+            columnNumber: 12
+        }, this);
+    }
+    const userList = users;
+    if (error) {
+        console.log(error);
+    }
+    // const { data: users } = await supabase.rpc("get_all_profiles")
     // const { data: users } = await supabase
     //   .from("profiles")
     //   .select("id, nombre, rol")
@@ -113,7 +129,7 @@ async function UsuariosAdminPage() {
                 children: "Administración de Usuarios"
             }, void 0, false, {
                 fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                lineNumber: 50,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
@@ -127,49 +143,49 @@ async function UsuariosAdminPage() {
                                     children: "Nombre"
                                 }, void 0, false, {
                                     fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Rol"
                                 }, void 0, false, {
                                     fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Cambiar Rol"
                                 }, void 0, false, {
                                     fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                            lineNumber: 54,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                        lineNumber: 53,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                        children: users?.map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                        children: userList.map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         children: user.nombre
                                     }, void 0, false, {
                                         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         children: user.rol
                                     }, void 0, false, {
                                         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$web$2d$taller$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -192,40 +208,40 @@ async function UsuariosAdminPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                                lineNumber: 73,
+                                                lineNumber: 92,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, user.id, true, {
                                 fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                                lineNumber: 62,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-                lineNumber: 52,
+                lineNumber: 71,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/web-taller/src/app/dashboard/admin/usuarios/page.tsx",
-        lineNumber: 49,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 }

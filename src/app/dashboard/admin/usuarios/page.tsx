@@ -39,9 +39,22 @@ export default async function UsuariosAdminPage() {
     redirect("/dashboard")
   }
 
+  type UserProfile = {
+  id: string
+  nombre: string | null
+  rol: string | null
+  }
+
   // 📋 Obtener todos los usuarios
-  const { data: users, error } = await supabase
-    .rpc("get_all_profiles")
+  // se tipo el userprofile
+  const { data: users, error } = await supabase.rpc("get_all_profiles")
+
+  if (error) {
+    console.error(error)
+    return <div>Error cargando usuarios</div>
+  }
+
+  const userList = users as UserProfile[]
 
   if (error) {
     console.log(error)
@@ -64,7 +77,7 @@ export default async function UsuariosAdminPage() {
           </tr>
         </thead>
         <tbody>
-          {users?.map((user) => (
+          {userList.map((user) => (
             <tr key={user.id}>
               <td>{user.nombre}</td>
               <td>{user.rol}</td>
