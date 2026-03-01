@@ -40,9 +40,16 @@ export default async function UsuariosAdminPage() {
   }
 
   // 📋 Obtener todos los usuarios
-  const { data: users } = await supabase
-    .from("profiles")
-    .select("id, nombre, rol")
+  const { data: users, error } = await supabase
+    .rpc("get_all_profiles")
+
+  if (error) {
+    console.log(error)
+  }
+  // const { data: users } = await supabase.rpc("get_all_profiles")
+  // const { data: users } = await supabase
+  //   .from("profiles")
+  //   .select("id, nombre, rol")
 
   return (
     <div>
