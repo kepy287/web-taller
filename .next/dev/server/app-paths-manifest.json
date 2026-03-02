@@ -4,5 +4,6 @@
   "/dashboard/admin/usuarios/page": "app/dashboard/admin/usuarios/page.js",
   "/dashboard/configuracion/page": "app/dashboard/configuracion/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/perfil/page": "app/dashboard/perfil/page.js"
+  "/dashboard/perfil/page": "app/dashboard/perfil/page.js",
+  "/dashboard/productos/page": "app/dashboard/productos/page.js"
 }
