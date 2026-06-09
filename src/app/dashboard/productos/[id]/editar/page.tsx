@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
-import EditarProductoForm from ".editar/EditarProductoForm"
+import EditarProductoForm from "./EditarProductoForm"
 
 
 interface Props {

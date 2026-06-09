@@ -105,7 +105,9 @@ export default async function ProductosPage() {
               )}
 
               {productos?.map((prod) => (
+                
                 <tr
+                  
                   key={prod.id_producto}
                   className="hover:bg-[#f9fbff] dark:hover:bg-[#253343] transition-colors"
                 >
